@@ -1,0 +1,59 @@
+ALGORITHM algorithm_name
+VAR
+    n:INTEGER    note:FLOAT    somme:FLOAT 
+    moyene:FLOAT    i:=INTEGER BEGIN  write("ecrire le nb de matiere"n)     
+    read(n)     write("ecrire variable"note)    
+    read(note)     For i:=0 to n DO    
+    somme:=somme+note     i:=i+1    
+    End_For     moyene:=somme/n    write("la moyenne est:",moyene) 
+    END  
+    ALGORITHM moyenne VAR     n:INTEGER    note:FLOAT    somme:FLOAT    moyene:FLOAT   
+    i:=INTEGER BEGIN     write("ecrire le nb de matiere"n)    
+    read(n)     write("ecrire variable"note) 
+    read(note)     WHILE (i<=n) DO         
+    somme:=somme+note     i:=i+1    
+    END_WHILE     moyene:=somme/n      write("la moyenne est:",moyene) 
+    END
+    BEGIN
+    set_instructions
+END
+ALGORITHM moyene
+VAR
+    n:INTEGER
+    note:FLOAT
+    somme:FLOAT
+    moyene:FLOAT
+    i:=INTEGER
+BEGIN
+    write("ecrire le nb de matiere"n)
+    read(n)
+    write("ecrire variable"note)
+    read(note)
+    For i:=0 to n DO
+    somme:=somme+note
+    i:=i+1
+    End_For
+    moyene:=somme/n
+    write("la moyenne est:",moyene)
+END
+
+ALGORITHM moyenne
+VAR
+
+    n:INTEGER
+    note:FLOAT
+    somme:FLOAT
+    moyene:FLOAT
+    i:=INTEGER
+BEGIN
+    write("ecrire le nb de matiere"n)
+    read(n)
+    write("ecrire variable"note)
+    read(note)
+    WHILE (i<=n) DO
+        somme:=somme+note
+    i:=i+1
+    END_WHILE
+    moyene:=somme/n
+    write("la moyenne est:",moyene)
+END
